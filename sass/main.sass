@@ -1,0 +1,958 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+// Пользовательские стили
+article
+ display: inline-block
+ width: 100%
+ margin-top: 100px
+
+h3
+  font-weight: bold
+  font-size: 15px
+
+.page_wrapper
+  min-height: 100%
+  position: relative
+  min-width: 700px
+
+.content_wrapper
+  display: block
+  width: 1000px
+  margin: 0 auto
+
+#header
+  font-family: 'Open Sans', sans-serif
+  background-color: #eceef4
+  width: 100%
+  position: relative
+
+  ul
+    display: inline-block
+    height: 100%
+    list-style: none
+    margin: 0
+    padding: 0
+    font-size: 0
+  li
+    font-size: 12px
+    height: 100%
+    display: inline-block
+
+  .primary_menu
+    display: inline-block
+    width: 50%
+    padding:
+      top: 15px
+      bottom: 15px
+      left: 80px
+    & a
+      font-weight: bold
+      display: inline-block
+      position: relative
+      padding-left: 40px
+      height: 32px
+      width: 100px
+      margin-right: 3px
+      color: #6d6e71
+      line-height: 32px
+      text-decoration: none
+      background-color: #fff
+      border-radius: 3px
+      transition: .3s ease-in-out
+    & a:hover
+      background-color: #eceef4
+
+
+  .blog::before
+    content: ""
+    background: url('../img/header_ico_1.png')
+    display: block
+    width: 19px
+    height: 19px
+    position: absolute
+    left: 10px
+    top: 6px
+  .jobs::before
+    content: ""
+    background: url('../img/header_ico_2.png')
+    @extend .blog
+  .support::before
+    content: ""
+    background: url('../img/header_ico_3.png')
+    @extend .blog
+  .arabic::before
+    content: ""
+    background: url('../img/header_ico_4.png')
+    @extend .blog
+
+  .secondary_menu
+    display: block
+    float: right
+    width: 50%
+    padding-top: 0
+    padding-bottom: 0
+    padding-left: 0
+    & ul
+      float: right
+      padding-right: 65px
+    & a
+      margin-right: 0
+      border-radius: 0
+      border-left: 1px solid #dee0e6
+      width: 56px
+      height: 62px
+      background-color: inherit
+      transition: .4s ease-in-out
+    & a:hover
+      background-color: #fff
+
+  .face::before
+      content: ""
+      background: url('../img/header_ico_5.png')
+      display: block
+      width: 21px
+      height: 21px
+      position: absolute
+      left: 18px
+      top: 20px
+
+  .twit::before
+      content: ""
+      background: url('../img/header_ico_6.png')
+      @extend .face
+  .inst::before
+      content: ""
+      background: url('../img/header_ico_7.png')
+      @extend .face
+  .googl
+      border-right: 1px solid #dee0e6
+  .googl::before
+      content: ""
+      background: url('../img/header_ico_8.png')
+      @extend .face
+
+.underheader
+  position: relative
+  margin-top: 30px
+  margin-right: 50px
+  & img
+    margin-left: 80px
+    margin-top: 30px
+.underheader_leftside
+  float: left
+.underheader_rightside
+  float: right
+.upper_message
+  display: block
+  width: 227px
+  height: 63px
+  background: url('../img/uppermessage.png') 0 0 no-repeat
+  & p
+    margin: 0
+    font-weight: 300
+    padding:
+      top: 15px
+      left: 45px
+.upper_message_phone
+  display: none
+  width: 227px
+  height: 63px
+  background: url('../img/uppermessage.png') 0 0 no-repeat
+  & p
+    margin: 0
+    font-weight: 300
+    padding:
+      top: 15px
+      left: 63px
+.upper_message_message
+  display: none
+  width: 227px
+  height: 63px
+  background: url('../img/uppermessage.png') 0 0 no-repeat
+  & p
+    margin: 0
+    font-weight: 300
+    padding:
+      top: 15px
+      left: 60px
+.underlogos
+  display: block
+  width: 240px
+  & i
+  font-size: 40px
+.map
+ border-left: 1px solid #bcbec3
+ border-right: 1px solid #bcbec3
+ padding: 0 20px 0 20px
+ color: #6d6e71
+ transition: .4s
+.phone
+  color: #6d6e71
+  padding: 0 20px 0 20px
+  transition: .4s
+.message
+  color: #6d6e71
+  padding: 0 20px 0 20px
+  transition: .4s
+
+.slider_top_side
+  display: block
+  width: 100%
+  position: relative
+  margin-top: 30px
+  border-top: 1px solid #eceef4
+  ul
+    display: inline-block
+    width: 73%
+    margin: 0
+    padding: 0
+    font-size: 0
+  li
+    display: inline-block
+    border-right: 1px solid #eceef4
+    font-size: 13px
+  a
+    display: block
+    text-decoration: none
+    transition: .3s
+    color: #6d6e71
+    font-weight: bold
+    padding:
+      left: 10px
+      right: 10px
+      top: 30px
+      bottom: 30px
+    &:hover
+      color: #2eb0e4
+
+.slider_search
+  display: inline-block
+  & i
+   color: #6d6e71
+   padding-right: 5px
+   font-size: 20px
+.in_search
+  border: none
+  font-weight: 300
+  font-size: 15px
+
+.slider_wrapp
+  display: block
+.slider_big
+  background: url('../img/slider_big.png')
+  background-size: cover
+  height: 443px
+  transition: .4s
+
+
+
+.min_slider_wrapp
+  position: relative
+  margin-top: -210px
+  width: 50%
+  margin-left: 400px
+
+
+#myslider
+  position: relative
+  font-weight: bold
+
+.slide_wrapp
+
+.like
+  transition: .4s
+  position: absolute
+  width: 100%
+  height: 35px
+  display: block
+  right: 0
+  bottom: 0
+  opacity: .7
+  text-decoration: none
+  text-align: center
+  font-size: 14px
+  line-height: 35px
+  &:hover
+    opacity: .4
+.like1
+  background: #88c94e
+  color: #fff
+  &::before
+    content: ''
+    background: url('../img/like1_before.png') no-repeat
+    position: absolute
+    width: 20px
+    height: 18px
+    left: 80px
+    bottom: 10px
+.like2
+  background: #feeb75
+  color: #cc9800
+  &::before
+    content: ''
+    background: url('../img/like2_before.png') no-repeat
+    position: absolute
+    width: 20px
+    height: 18px
+    left: 80px
+    bottom: 10px
+.slide1
+   height: 150px
+.slide2
+   height: 150px
+
+.owl-prev
+  display: none
+.owl-next
+  transition: .4s
+  display: block
+  position: absolute
+  right: -69px
+  bottom: -10px
+  &:hover
+    opacity: .7
+
+
+.first_text
+  position: relative
+  &::after
+    content: ''
+    background: url('../img/border_down.png') no-repeat
+    height: 65px
+    width: 1000px
+    position: absolute
+    left: 100px
+    top: 300px
+
+.text_block
+  display: inline-block
+  width: 45%
+  float: left
+  font-size: 12px
+  color: #6d6e71
+
+.whataboutisama_text
+   width: 60%
+   float: right
+   position: relative
+   &::before
+     content: ''
+     background: url('../img/whataboutisama_before.png')
+     height: 74px
+     width: 70px
+     position: absolute
+     left: -90px
+     top: 20px
+
+.whyweexist_text
+    width: 60%
+    float: right
+    position: relative
+    &::before
+       content: ''
+       background: url('../img/whyweexist_before.png')
+       height: 84px
+       width: 70px
+       position: absolute
+       left: -90px
+       top: 20px
+
+
+
+.second_text_head
+  display: block
+  position: relative
+  text-align: center
+  width: 300px
+  margin: 0 auto
+  color: #6d6e71
+  & h3
+    font-weight: bold
+    font-size: 30px
+    margin: 0
+.second_text_head
+    & h5
+      font-size: 10px
+      margin: 0
+      font-weight: 300
+      padding-left: 53px
+.second_text_head
+  &::before
+    content: ''
+    background: url('../img/whatwedo_before.png') no-repeat
+    height: 71px
+    width: 80px
+    position: absolute
+    left: -40px
+
+.txt_ar2_wrapp
+  margin-top: 30px
+
+.leftside_ar2
+  display: block
+  float: left
+  width: 50%
+  border-right: 1px solid #eaeced
+
+.ar2_txt
+  width: 70%
+  position: relative
+  float: right
+  margin-right: 35px
+  & h3
+    color: #6d6e71
+    font-size: 20px
+    margin-bottom: 10px
+.ar2_txt
+  & p
+    color: #949597
+    font-size: 10px
+    margin: 0
+
+.webdesign_develop
+  &::before
+    content: ''
+    background: url('../img/webdesign_before.png') no-repeat
+    height: 63px
+    width: 70px
+    position: absolute
+    left: -100px
+    top: 30px
+.software_solutions
+  &::before
+      content: ''
+      background: url('../img/softwaresolutions_before.png') no-repeat
+      height: 75px
+      width: 70px
+      position: absolute
+      left: -100px
+      top: 30px
+.branding
+  &::before
+    content: ''
+    background: url('../img/branding_before.png') no-repeat
+    height: 72px
+    width: 700px
+    position: absolute
+    left: -100px
+    top: 30px
+    width: 70px
+    position: absolute
+    left: -100px
+    top: 30px
+
+
+.rightside_ar2
+  float: left
+  width: 45%
+  margin-left: 40px
+
+.mobileaplications
+  &::before
+    content: ''
+    background: url('../img/aplications_before.png') no-repeat
+    height: 65px
+    width: 50px
+    position: absolute
+    left: -70px
+    top: 30px
+.interiordesign
+  &::before
+    content: ''
+    background: url('../img/interior_before.png') no-repeat
+    height: 44px
+    width: 60px
+    position: absolute
+    left: -75px
+    top: 35px
+.seo
+  &::before
+    content: ''
+    background: url('../img/seo_before.png') no-repeat
+    height: 57px
+    width: 50px
+    position: absolute
+    left: -70px
+    top: 30px
+
+
+.our_projects
+  background: url('../img/block3_back.png') no-repeat
+  height: 740px
+  background-position: top
+  margin-bottom: 10px
+
+.our_projects_header
+  position: relative
+  display: block
+  width: 43%
+  text-align: center
+  margin: 0 auto
+  & h3
+    font-weight: bold
+    font-size: 30px
+    color: #6d6e71
+    margin-top: 50px
+    margin-bottom: 0
+.our_projects_header
+  & h5
+    font-size: 15px
+    font-weight: 300
+    color: #6d6e71
+    margin: 0
+    padding-left: 125px
+    text-align: left
+.our_projects_header
+  &::before
+    content: ''
+    background: url('../img/projects_before.png') no-repeat
+    height: 106px
+    width: 100px
+    position: absolute
+    left: 0
+    bottom: 10px
+
+.our_projects_nav
+  display: block
+  width: 100%
+  text-align: center
+  & ul
+    display: inline-block
+    margin-top: 50px
+.our_projects_nav
+  & li
+   display: inline-block
+.our_projects_nav
+  & a
+    transition: .4s ease-in
+    text-decoration: none
+    color: #bebebe
+    display: block
+    padding-left: 20px
+    padding-right: 20px
+    padding-top: 5px
+    padding-bottom: 5px
+    border: 2px solid #bebebe
+    border-radius: 3px
+    margin-right: 4px
+    font-weight: bold
+    &:hover
+      color: #6d6e71
+      border: 2px solid #fff
+      background-color: #fff
+
+.our_projects_content_wrapp
+    width: 100%
+    display: inline-block
+    margin-left: 35px
+
+.our_projects_content_wrapp_mobile_apps
+  display: none
+
+.our_project_item
+  margin-right: 10px
+  margin-bottom: 15px
+  display: inline-block
+  font-size: 0
+  border: 10px solid #fff
+  border-radius: 6px
+  border-bottom: 0
+  & a
+    transition: .4s
+    display: inline-block
+    position: relative
+    background-color: #fff
+    padding-left: 49.7px
+    padding-right: 49.7px
+    padding-top: 20px
+    padding-bottom: 20px
+    margin: 0
+    border-right: 2px solid #f5f5f5
+    &:last-child
+      border-right: 0
+    &:hover
+      opacity: .6
+.chain
+  &::before
+    content: ''
+    background: url('../img/chain.png') no-repeat
+    position: absolute
+    height: 15px
+    width: 20px
+    bottom: 12px
+    right: 40px
+.more
+  &::before
+    content: ''
+    position: absolute
+    width: 20px
+    height: 18px
+    background: url('../img/more.png') no-repeat
+    bottom: 12px
+    right: 40px
+
+#myBtn
+  z-index: 999
+  display: none
+  transition: .4s ease-in-out
+  opacity: .8
+  cursor: pointer
+  position: fixed
+  right: 100px
+  bottom: 100px
+  width: 50px
+  height: 50px
+  border-radius: 30px
+  background: #cfcfcf url('../img/buttonup.png') no-repeat
+  background-position: center
+  &:hover
+    opacity: .5
+    right: 95px
+    bottom: 94px
+    height: 58px
+    width: 58px
+
+
+
+.our_team
+  height: 480px
+  margin-top: 0
+  margin-bottom: 100px /*temporary!!!!!*/
+
+.our_team_header
+  position: relative
+  display: block
+  width: 60%
+  text-align: center
+  margin: 0 auto
+  & h3
+    font-weight: bold
+    font-size: 30px
+    color: #6d6e71
+    margin-top: 50px
+    margin-bottom: 0
+.our_team_header
+  & h5
+    font-size: 15px
+    font-weight: 300
+    color: #6d6e71
+    margin: 0
+    padding-left: 190px
+    text-align: left
+.our_team_header
+  &::before
+    content: ''
+    background: url('../img/team_before.png') no-repeat
+    height: 123px
+    width: 100px
+    position: absolute
+    left:  70px
+    bottom: 0
+.worker_wrapp
+  display: inline-block
+  position: relative
+  width: 22%
+  height: 330px
+  background: #f5f5f5
+  border-radius: 7px
+  margin-top: 60px
+  margin-right: 13.2px
+  margin-left: 13.2px
+.workerone
+  &::before
+    content: ''
+    background: url('../img/worker1.png') no-repeat
+    position: absolute
+    left: 53px
+    top: 35px
+    height: 118px
+    width: 120px
+.workertwo
+  &::before
+    content: ''
+    background: url('../img/worker2.png') no-repeat
+    position: absolute
+    left: 53px
+    top: 35px
+    height: 118px
+    width: 120px
+.workerthree
+  &::before
+    content: ''
+    background: url('../img/worker3.png') no-repeat
+    position: absolute
+    left: 53px
+    top: 35px
+    height: 118px
+    width: 120px
+.workerfourth
+  &::before
+    content: ''
+    background: url('../img/worker4.png') no-repeat
+    position: absolute
+    left: 53px
+    top: 35px
+    height: 118px
+    width: 120px
+
+.worker_name
+  transition: .5s ease-in-out
+  display: block
+  position: absolute
+  bottom: 100px
+  text-align: center
+  width: 100%
+  font-weight: bold
+  color: #6d6e71
+  text-decoration: none
+  font-size: 25px
+  line-height: 23px
+  & span
+    font-weight: 300
+    display: inline-block
+    width: 100%
+    text-align: center
+    font-size: 15px
+  &:hover
+    opacity: .7
+    font-size: 30px
+    color: #626371
+.social_worker
+  display: block
+  height: 45px
+  width: 100%
+  background: #fff
+  position: absolute
+  bottom: 25px
+.worker_face
+  &::before
+    content: ''
+    background: url('../img/worker_face.png') no-repeat
+    position: absolute
+    height: 21px
+    width: 21px
+    left: 55px
+    top: 12px
+.worker_twit
+  &::before
+    content: ''
+    background: url('../img/worker_twit.png') no-repeat
+    position: absolute
+    height: 21px
+    width: 21px
+    top: 13px
+    left: 90px
+.worker_inst
+  &::before
+    content: ''
+    background: url('../img/worker_inst.png') no-repeat
+    position: absolute
+    height: 21px
+    width: 21px
+    left: 120px
+    top: 12px
+.worker_in
+  &::before
+    content: ''
+    background: url('../img/worker_in.png') no-repeat
+    position: absolute
+    height: 21px
+    width: 21px
+    left: 152px
+    top: 11px
+
+#map
+  height: 300px
+  margin-top: 50px
+  position: relative
+.gm-style span
+  display: none
+.gm-style-cc a
+  display: none
+.gmnoprint
+  display: none
+.gm-style a
+  display: none!important
+.map_nav
+  position: absolute
+  bottom: 180px
+  left: 470px
+.map_logos
+  display: inline-block
+  width: 100%
+.map_location
+  transition: .4s ease-in-out
+  display: inline-block
+  background-color: #fff
+  border-radius: 8px
+  font-size: 30px
+  text-align: center
+  color: #6c6d70
+  line-height: 0
+  padding:
+    top: 5px
+    bottom: 5px
+    left: 10px
+    right: 10px
+  &:hover
+    color: #fff
+    background-color: #1ea6dc
+.map_message
+  @extend .map_location
+.map_phone
+  @extend .map_location
+
+.upper_map
+  display: none
+  position: absolute
+  bottom: 30px
+  right: 58px
+  width: 100%
+  height: 50px
+  background-color: #fff
+  line-height: 5px
+  color: #a7a8aa
+  font-weight: 300
+  font-size: 12px
+  margin-bottom: 20px
+  text-align: center
+  border-radius: 5px
+  padding-top: 5px
+  &::after
+    content: ''
+    border-bottom: 20px solid #fff
+    position: absolute
+    width: 20px
+    bottom: -9px
+    transform: rotate(47deg)
+  & p
+    margin: 0
+    line-height: 20px
+.upper_mapphone
+    display: none
+    position: absolute
+    bottom: 30px
+    left: 45px
+    width: 100%
+    height: 50px
+    background-color: #fff
+    line-height: 5px
+    color: #a7a8aa
+    font-weight: 300
+    font-size: 12px
+    margin-bottom: 20px
+    text-align: center
+    border-radius: 5px
+    padding-top: 17px
+    &::after
+      content: ''
+      border-bottom: 20px solid #fff
+      position: absolute
+      width: 20px
+      bottom: -9px
+      left: 60px
+      transform: rotate(47deg)
+    & p
+      margin: 0
+      line-height: 20px
+
+footer
+  display: block
+  position: relative
+  width: 100%
+  background-color: #2b2c2d
+  margin-top: -8px
+  padding-top: 50px
+
+.footer_upper
+  display: block
+  width: 70%
+  margin: 0 auto
+
+.footer_upper_left
+  display: block
+  float: left
+  padding-bottom: 50px
+  font-size: 0
+  & a
+    display: inline-block
+    width: 45px
+    height: 40px
+    background-color: inherit
+    font-size: 25px
+    text-align: center
+    border-right: 1px solid #414344
+    color: #414344
+.footer_google
+  border-right: 0!important
+
+.footer_upper_right
+  display: block
+  float: right
+  background-color: #393b3c
+  padding: 10px
+  border-radius: 10px
+  font-weight: 300
+  & input
+    width: 280px
+    background-color: #393b3c
+    border: none
+    color: #6b6f71
+    font-size: 13px
+  & a
+    color: #6b6f71
+    text-decoration: none
+    font-weight: bold
+    font-size: 13px
+    padding:
+      top: 5px
+      bottom: 5px
+      left: 10px
+      right: 10px
+    background-color: #494c4d
+    border-radius: 5px
+.input_prev
+  font-size: 25px
+  color: #6b6f71
+  text-align: center
+  vertical-align: bottom
+  margin-right: 5px
+
+.footer_lower
+  display: block
+  width: 70%
+  margin: 0 auto
+
+.copyright
+  display: inline-block
+  & p
+    font-size: 8px
+    color: #6d6e71
+.copyrightmenu
+  float: right
+  & a
+    font-size: 8px
+    color: #6d6e71
+    text-decoration: none
+    &::after
+      content: '•'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media" // Всегда в конце
